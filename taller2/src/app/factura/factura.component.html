@@ -1,1 +1,19 @@
-<p>factura works!</p>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col" class="producto">PRODUCTOS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-light">
+        <th scope="row"class="producto bg-primary">{{factura}}</th>
+      </tr> 
+    </tbody>
+  </table>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Ingrese el nombre del producto" aria-label="Recipient's username" aria-describedby="basic-addon2" [(ngModel)]="factura1">
+    <div class="input-group-append">
+      <button class="btn btn-warning" type="button" (click)="agregarItem()">Agregar Producto</button>
+    </div>
+  </div>
+  
